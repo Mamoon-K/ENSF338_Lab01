@@ -1,7 +1,8 @@
 
-
-# Used ChatGPT to help generate this program.
+# Used ChatGPT to help create this program.
 # Program to count the average number of vowels in a given text file
+# ENSF 338 Lab01 Exercise 2.2
+
 
 # List of vowels to count
 vowels = "aeiouyAEIOUY"
@@ -33,8 +34,12 @@ for word in words:
     total_vowel_count += vowel_count
     total_word_count += 1
 
+if total_word_count <= 0:
+    print("No words found.")
+
 # Calculate the average number of vowels per word
-average_vowels_per_word = total_vowel_count / total_word_count if total_word_count > 0 else 0
+else:
+    average_vowels_per_word = total_vowel_count / total_word_count
 
 # Output the result
 print(f"Average number of vowels per word: {average_vowels_per_word:.2f}")
