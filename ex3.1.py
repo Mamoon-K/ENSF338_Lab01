@@ -1,3 +1,4 @@
+"""
 def hello_world(number):
  print("Hello, world! My group number is", number)
 hello_world("3")
@@ -28,7 +29,7 @@ def do_stuff():
         
     
 do_stuff()
-
+"""
 
 import matplotlib.pyplot as plt
 import json 
