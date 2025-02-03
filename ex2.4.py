@@ -4,7 +4,7 @@ import timeit
 vowels = "aeiouyAEIOUY"
 
 # Open and read the entire file (not included in timing)
-with open("pg2701.txt", "r") as file:
+with open("pg2701.txt", "r", encoding="utf8") as file:
     lines = file.readlines()
 
 # Start counting from the line that includes "CHAPTER 1. Loomings."
